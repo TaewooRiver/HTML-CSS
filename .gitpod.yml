@@ -1,6 +1,15 @@
+
 image:
   file: .gitpod.Dockerfile
 
 tasks:
   - init: 'echo "TODO: Replace with init/build command"'
     command: 'echo "TODO: Replace with command to start project"'
+
+vscode:
+  extensions:
+    - coenraads.bracket-pair-colorizer-2
+    - oderwat.indent-rainbow
+    - formulahendry.auto-rename-tag
+    - mrmlnc.vscode-autoprefixer
+    - solnurkarim.html-to-css-autocompletion
