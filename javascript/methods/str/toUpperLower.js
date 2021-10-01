@@ -1,3 +1,3 @@
 let str = "lorem ipsum";
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+console.log(str.toUpperCase()); // "LOREM IPSUM"
+console.log(str.toLowerCase()); // "LOREM IPSUM"
