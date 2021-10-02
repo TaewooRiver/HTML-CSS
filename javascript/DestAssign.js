@@ -41,7 +41,6 @@ console.log(c2); // what did you expect
     console.log(`AFTER : x = ${x}, y = ${y}`); // AFTER : x = 2, y = 1
 
 //Destructive Assignments can be applied to Objcets as well
-
 let user1 = {
     age: 30,
     name: "Mike",
@@ -53,7 +52,6 @@ let {age, name} = user1;
 //      let age = user.age;
 //      let name = user.name;
 // Therefore,
-
 console.log(age); // 30
 console.log(name); // "Mike"
 //TIP:  let {age, name} = user1; 
@@ -67,13 +65,12 @@ let user2 = {
 }
 
 let {age: userAge, name: userName} = user2;
-console.log(userAge);
-console.log(userName);
+console.log(userAge); // 30
+console.log(userName); // Mike
 
 
 //if there is a key that the original object does not have, then it returns undefined
-
-
+//---------------[IGNORE BELOW CODE]--------------
 let Store = (years, location) => {
     return {
         location: location,
@@ -81,8 +78,14 @@ let Store = (years, location) => {
     }
 }
 
-//---------------IGNORE BELOW CODE--------------
 let store1 = Store(3, "Seoul");
-console.log(store1);
-//---------------IGNORE ABOVE CODE--------------
+let store2 = Store(5, "New York");
+//---------------[IGNORE ABOVE CODE]--------------
+let {location1, years1, owner1} = store1;
+console.log(owner1); // undefined
 
+    //in ths case, just like how we did with arrays, default values can be set.
+    let {location2, years2, owner2 = "DEFAULT NAME"} = store2;
+    console.log(owner2); // DEFAULT NAME
+
+    //as these are default values, if there already is a value for the key, default values are ignored.
