@@ -80,6 +80,11 @@ let Store = (years, location) => {
 
 let store1 = Store(3, "Seoul");
 let store2 = Store(5, "New York");
+
+function Computer(model, version) {
+    this.model = model;
+    this.version = version;
+}
 //---------------[IGNORE ABOVE CODE]--------------
 let {location1, years1, owner1} = store1;
 console.log(owner1); // undefined
