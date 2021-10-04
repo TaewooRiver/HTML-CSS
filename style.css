@@ -1,16 +1,36 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> b5cdd802a63ed3f3430fb7c3d07373c624b3bc3f
 p {
     animation-duration: 3s;
     animation-name: slidein;
 }
 
+<<<<<<< HEAD
 @keyframes slidein{
     from{
         margin-left: 100%;
         width: 300%
+=======
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+>>>>>>> b5cdd802a63ed3f3430fb7c3d07373c624b3bc3f
     }
 
     to {
         margin-left: 0%;
         width: 100%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+.blue{
+
+}
+
+>>>>>>> b5cdd802a63ed3f3430fb7c3d07373c624b3bc3f
