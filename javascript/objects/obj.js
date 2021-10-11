@@ -6,6 +6,7 @@ let Computer = (madeYear, manufacturer) => {
     }
 }
 
+
 let com1 = Computer(2001, "Samsung");
 console.log(com1); // prints the object
 
