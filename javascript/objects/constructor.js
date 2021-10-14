@@ -8,7 +8,7 @@ let User = (name, age) => {
     this.name = name;
     this.age = age;
 }
-
+ 
 //to use a constructor, you need to prefix the word `new`.
 //what `new` does is it calls the function in the below way so that it looks like:
 //
@@ -17,7 +17,7 @@ let User = (name, age) => {
 //    this.name = name;
 //    this.age = age;
 //    return this;
-//}
+//} 
 
 let user1 = new User("John", 23);
 
