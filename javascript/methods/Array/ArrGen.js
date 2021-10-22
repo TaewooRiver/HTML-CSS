@@ -7,5 +7,6 @@ function AscendingRandomArray(numbers){
     this.array.sort((a, b) => a - b);
 }
 
+
 let array1 = new AscendingRandomArray(6)
 console.log(array1.array); 
